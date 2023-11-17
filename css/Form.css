@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    background-color: #f0f0f0;
+}
+
+.form-container {
+    padding: 20px 0;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #747272;
+    background-color: #e7e7e7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+form label {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=number],
+input[type=email],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+.formButton {
+    background-color: rgb(90, 142, 90);
+    color: #fff;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#submit {
+    margin-left: 50px;
+}
+
+.form-container {
+    position: relative;
+}
+
+.redirect-button {
+    position: absolute;
+    top: 10%;
+    left: -260px;
+    transform: translateY(-100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 150%;
+    background-color: var(--c-background-primary);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.2s ease;
+}
+
+.redirect-button .ph {
+    font-size: 24px;
+}
+
+.redirect-button:hover {
+    background-color: var(--c-background-secondary);
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 10px;
+}
+
+.button-container .button {
+    display: inline-block;
+    background-color: #90EE90;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.arrow-button {
+    position: relative;
+    display: inline-block;
+    padding: 40px 60px;
+    background-color: rgb(225, 232, 225);
+    color: var(--c-text-action);
+    border: 1px solid black;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+    width: 250px;
+}
+
+.arrow-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid var(--c-text-action);
+}
+
+
+.dropbtn {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 20px 40px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn:after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    right: -15px;
+    transform: translateY(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--c-text-action);
+}

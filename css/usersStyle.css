@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.container h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 70px;
+}
+
+@media (max-width: 1200px) {
+    .container h1 {
+        display: none;
+    }
+}
+
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    background-color: var(--c-background-secondary);
+    color: var(--c-text-primary);
+}
+
+.add {
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 860px;
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5em;
+    height: 40px;
+    border-radius: 8px;
+    line-height: 1;
+    border: 2px solid var(--c-border-primary);
+    color: var(--c-text-action);
+    font-size: 0.875rem;
+    transition: 0.15s ease;
+    background-color: var(--c-background-primary);
+}
+
+@media (max-width: 1200px) {
+    .add {
+        margin-left: 220px;
+    }
+}
+
+.search {
+    position: absolute;
+    max-width: 340px;
+    margin-top: 110px;
+    width: 15%;
+    margin-left: 900px;
+}
+
+@media (max-width: 1200px) {
+    .search {
+        margin-left: 260px;
+    }
+}
+
+.search input {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em 0 20px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid var(--c-border-primary);
+    color: var(--c-text-action);
+    font-size: 0.875rem;
+    transition: 0.15s ease;
+    width: 100%;
+    line-height: 1;
+}
+
+.search input:focus,
+.search input:hover {
+    border-color: var(--c-accent-primary);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper {
+    margin: 10px auto;
+    padding: 20px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.wrapper h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.wrapper .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333
+}
+
+.wrapper .cont {
+    max-height: 450px;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+.form {
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    padding: 20px 0;
+}
+
+form label {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.formButton {
+    background-color: rgb(90, 142, 90);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: block;
+    margin: 25px auto -5px;
+}
+
+.edit-icon,
+.delete-icon {
+    margin-left: 5px;
+    color: green;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.delete-icon {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+#myTable {
+    margin-top: 40px;
+}
+
+@media (max-width: 1200px) {
+    #myTable {
+        margin-top: 150px;
+    }
+}
+
+
+.dropbtn {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 20px 40px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn:after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    right: -15px;
+    transform: translateY(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--c-text-action);
+}
